@@ -15,7 +15,7 @@ def name=(name)
 end
 
 def artist=(song)
-  @song = song  #artist=
+  @songs = song  #artist=
 #    sets the artist object to belong to the song (FAILED - 14)
 end
 
