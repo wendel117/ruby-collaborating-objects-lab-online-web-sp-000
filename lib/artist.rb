@@ -6,7 +6,7 @@ attr_accessor :name, :songs
 
 def initialize(name)
   @name = name
-#  @songs = []
+  @songs = []
 #  initialize with #name
 #    accepts a name for the artist (FAILED - 1)
 end
