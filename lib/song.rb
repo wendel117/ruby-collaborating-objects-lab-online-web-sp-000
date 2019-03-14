@@ -19,7 +19,7 @@ def artist=(song)
 #    sets the artist object to belong to the song (FAILED - 14)
 end
 
-def self.new_by_filename(song)
+def self.new_by_filename(title)
    song = self.new
    song.title = filename.split(" - ")[1]
    song
