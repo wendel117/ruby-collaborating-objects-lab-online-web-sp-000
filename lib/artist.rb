@@ -17,7 +17,7 @@ def add_song(song)
  end
 
 def save
-  #  adds the artist instance to the @@all class variable (FAILED - 4)
+  @@all << self#  adds the artist instance to the @@all class variable (FAILED - 4)
 end
 
 def self.find_or_create_by_name
