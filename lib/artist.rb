@@ -24,7 +24,11 @@ def save
   @@all << self#  adds the artist instance to the @@all class variable (FAILED - 4)
 end
 
-def self.find_or_create_by_name
+def self.all
+  @@all
+  end
+
+  def self.find_or_create_by_name
 #finds or creates an artist by name maintaining uniqueness of objects by name property (FAILED - 5)
 #Creates new instance of Artist if none exist (FAILED - 6)
 end
