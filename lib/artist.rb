@@ -12,10 +12,9 @@ def name=(name)
   # sets the artist name
 end
 
-def add_song
-  #add_song
-#    keeps track of an artist's songs (FAILED - 3)
-end
+def add_song(song)
+   song.artist = self
+ end
 
 def save
   #  adds the artist instance to the @@all class variable (FAILED - 4)
