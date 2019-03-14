@@ -1,18 +1,17 @@
-class Mp3Importer
+class MP3Importer
 
-def initialize
-    #initialize
-#      accepts a file path to parse mp3 files from (FAILED - 8)
-end
+  attr_accessor :path
 
-def files    #files
-#      loads all the mp3 files in the path directory (FAILED - 9)
-#      normalizes the filename to just the mp3 filename with no path (FAILED - 10)
+  def initialize(path)
+    @path = path
+  end
 
-end
+  def files
+    @files ||= Dir.entries(@path).select {|song| !File.directory?(song) && song.end_with?(".mp3")}
+  end
 
-def import  #import
-  #    imports the files into the library by creating songs from a filename (FAILED - 11)
-end
+  def import
+    files.each {|song| Song.new_by_filename(song)}
+  end
 
 end
