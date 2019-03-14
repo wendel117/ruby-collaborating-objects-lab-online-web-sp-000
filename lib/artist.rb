@@ -39,10 +39,9 @@ def self.all
       end
     end
 
-def print_songs
-#    lists all of the artist's songs (FAILED - 7)
-  @songs each do |song|
-    puts song.name
-  end
-end
-end
+    def print_songs
+       @songs.each do |song|
+         puts song.name
+       end
+     end
+   end
