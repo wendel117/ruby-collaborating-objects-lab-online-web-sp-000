@@ -27,6 +27,7 @@ end
 
 def print_songs
 #    lists all of the artist's songs (FAILED - 7)
+  print artist.song
   end
 
 end
